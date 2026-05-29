@@ -11,7 +11,7 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: { navy:'#0d1f3c', navymd:'#162d54', navylt:'#1e3d6e', gold:'#c8a84b', goldlt:'#e8c96a', golddk:'#8a6f2a', cream:'#f8f6f0', charcoal:'#1a1a1a' },
+          colors: { navy:'#7d1d27', navymd:'#9a2731', navylt:'#b8323d', gold:'#edab00', goldlt:'#ffc73a', golddk:'#c8930f', cream:'#faf6ee', charcoal:'#1a1a1a' },
           fontFamily: { display:['Oswald','sans-serif'], body:['Inter','system-ui','sans-serif'] }
         }
       }
@@ -22,14 +22,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     html{scroll-behavior:smooth;} body{font-family:'Inter',system-ui,sans-serif;} h1,h2,h3,h4{font-family:'Oswald',sans-serif;}
-    .nav-link{display:block;padding:.5rem .75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;transition:color .2s;} .nav-link:hover{color:#c8a84b;}
-    .dropdown-link{display:block;padding:.5rem 1.25rem;font-size:.875rem;color:#374151;transition:background .15s,color .15s;} .dropdown-link:hover{background:#f8f6f0;color:#c8a84b;}
+    .nav-link{display:block;padding:.5rem .75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;transition:color .2s;} .nav-link:hover{color:#edab00;}
+    .dropdown-link{display:block;padding:.5rem 1.25rem;font-size:.875rem;color:#374151;transition:background .15s,color .15s;} .dropdown-link:hover{background:#faf6ee;color:#edab00;}
     .nav-dropdown{display:none;} .nav-item:hover .nav-dropdown{display:block;}
     #mobile-menu{display:none;} #mobile-menu.open{display:block;}
-    .section-label{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#c8a84b;}
-    .page-hero{background-image:linear-gradient(to bottom,rgba(13,31,60,.85),rgba(13,31,60,.6)),url('assets/IMG_1438.jpg');background-size:cover;background-position:center;}
+    .section-label{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#edab00;}
+    .page-hero{background-image:linear-gradient(to bottom,rgba(125,29,39,.85),rgba(125,29,39,.6)),url('assets/IMG_1438.jpg');background-size:cover;background-position:center;}
     .class-card:hover{transform:translateY(-4px);}
-    .day-btn.active{background:#c8a84b;color:#0d1f3c;font-weight:700;}
+    .day-btn.active{background:#edab00;color:#7d1d27;font-weight:700;}
   </style>
 </head>
 <body class="bg-white text-charcoal">
@@ -47,13 +47,13 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-center justify-between h-20">
         <a href="index.html" class="flex items-center gap-3 shrink-0">
-          <img src="assets/IMG_1442.jpg" alt="Kings Gym Logo" class="h-12 w-12 rounded-full object-cover" />
-          <div class="leading-tight"><div class="font-display font-bold text-2xl text-navy tracking-widest leading-none">KINGS GYM</div><div style="font-family:'Inter',sans-serif;font-size:.65rem;letter-spacing:.22em;color:#c8a84b;font-weight:600;text-transform:uppercase;">Train Like Royalty</div></div>
+          <svg viewBox="0 0 100 100" class="h-14 w-14 shrink-0" role="img" aria-label="Kings Gym logo"><circle cx="50" cy="50" r="49" fill="#7d1d27"/><circle cx="50" cy="50" r="44" fill="#fff"/><circle cx="50" cy="50" r="40" fill="#edab00"/><g fill="#7d1d27"><rect x="32" y="46" width="36" height="8" rx="3"/><rect x="25" y="37" width="8" height="26" rx="3"/><rect x="67" y="37" width="8" height="26" rx="3"/><rect x="18" y="41" width="7" height="18" rx="3"/><rect x="75" y="41" width="7" height="18" rx="3"/><rect x="12" y="45" width="6" height="10" rx="3"/><rect x="82" y="45" width="6" height="10" rx="3"/></g></svg>
+          <div class="leading-tight"><div class="font-display font-bold text-2xl text-navy tracking-widest leading-none">KINGS GYM</div><div style="font-family:'Inter',sans-serif;font-size:.65rem;letter-spacing:.22em;color:#edab00;font-weight:600;text-transform:uppercase;">Train Like Royalty</div></div>
         </a>
         <ul class="hidden md:flex items-center">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="rates.html" class="nav-link">Rates</a></li>
-          <li class="nav-item relative"><button class="nav-link flex items-center gap-1" style="color:#c8a84b;">Classes <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1" style="color:#edab00;">Classes <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
             <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="classes.html" class="dropdown-link">Class Schedule</a><a href="classes.html#instructors" class="dropdown-link">Instructors</a><a href="classes.html#group" class="dropdown-link">Group Fitness</a><a href="classes.html#personal" class="dropdown-link">Personal Training</a></div>
           </li>
           <li class="nav-item relative"><button class="nav-link flex items-center gap-1">The Gym <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
