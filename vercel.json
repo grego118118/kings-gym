@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/rates",      "destination": "/rates.html" },
-    { "source": "/classes",    "destination": "/classes.html" },
+    { "source": "/tanning",    "destination": "/tanning.html" },
     { "source": "/facilities", "destination": "/facilities.html" },
     { "source": "/contact",    "destination": "/contact.html" }
   ],

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kings Gym — Train Like Royalty | Greenfield, MA</title>
-  <meta name="description" content="Kings Gym is Greenfield's premier fitness center. World-class equipment, group fitness classes, personal training, sauna, and more. Memberships from $49/month." />
+  <meta name="description" content="Kings Gym is Greenfield's premier fitness center. World-class equipment, personal training, tanning, sauna, and more. Memberships from $49/month." />
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -159,17 +159,8 @@
           <li>
             <a href="rates.html" class="nav-link">Rates</a>
           </li>
-          <li class="nav-item relative">
-            <button class="nav-link flex items-center gap-1">
-              Classes
-              <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50">
-              <a href="classes.html" class="dropdown-link">Class Schedule</a>
-              <a href="classes.html#instructors" class="dropdown-link">Instructors</a>
-              <a href="classes.html#group" class="dropdown-link">Group Fitness</a>
-              <a href="classes.html#personal" class="dropdown-link">Personal Training</a>
-            </div>
+          <li>
+            <a href="tanning.html" class="nav-link">Tanning</a>
           </li>
           <li class="nav-item relative">
             <button class="nav-link flex items-center gap-1">
@@ -208,7 +199,7 @@
         <nav class="flex flex-col divide-y divide-navylt">
           <a href="index.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold transition-colors">Home</a>
           <a href="rates.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold transition-colors">Rates</a>
-          <a href="classes.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold transition-colors">Classes</a>
+          <a href="tanning.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold transition-colors">Tanning</a>
           <a href="facilities.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold transition-colors">Facilities</a>
           <a href="contact.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold transition-colors">Contact</a>
         </nav>
@@ -238,8 +229,8 @@
           <a href="rates.html" class="inline-flex items-center bg-gold hover:bg-goldlt text-navy font-display font-bold px-9 py-4 text-base uppercase tracking-widest transition-all duration-200 rounded-sm shadow-lg shadow-gold/30">
             Join Now
           </a>
-          <a href="classes.html" class="inline-flex items-center border-2 border-white/70 text-white hover:border-gold hover:text-gold font-display font-bold px-9 py-4 text-base uppercase tracking-widest transition-all duration-200 rounded-sm">
-            View Classes
+          <a href="facilities.html" class="inline-flex items-center border-2 border-white/70 text-white hover:border-gold hover:text-gold font-display font-bold px-9 py-4 text-base uppercase tracking-widest transition-all duration-200 rounded-sm">
+            Tour the Gym
           </a>
         </div>
         <div class="mt-10 flex items-center gap-8 text-sm text-gray-400">
@@ -318,7 +309,7 @@
           </div>
           <ul class="text-gray-400 text-sm space-y-1.5 mb-5">
             <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Full gym &amp; cardio access</li>
-            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> All group fitness classes</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Tanning beds available</li>
             <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Locker rooms &amp; sauna</li>
           </ul>
           <a href="rates.html" class="inline-flex items-center gap-1 text-gold hover:text-goldlt font-semibold text-sm transition-colors">
@@ -327,40 +318,24 @@
           </a>
         </div>
 
-        <!-- Today's Classes -->
+        <!-- Tanning -->
         <div class="py-10 md:py-12 md:pl-10">
           <div class="flex items-center justify-between mb-5">
             <div class="flex items-center gap-3">
               <div class="w-9 h-9 rounded-full bg-gold/15 flex items-center justify-center shrink-0">
-                <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m12.728 0l-1.414-1.414M7.05 7.05L5.636 5.636M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
               </div>
-              <h3 class="font-display font-semibold text-lg text-gold uppercase tracking-widest">Today's Classes</h3>
+              <h3 class="font-display font-semibold text-lg text-gold uppercase tracking-widest">Tanning</h3>
             </div>
           </div>
-          <ul class="space-y-3 mb-5">
-            <li class="flex items-start gap-3">
-              <span class="font-mono text-gold text-xs pt-0.5 shrink-0 w-14">6:00 AM</span>
-              <div><div class="text-white text-sm font-medium">Boot Camp</div><div class="text-gray-500 text-xs">45 min · Main Studio</div></div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="font-mono text-gold text-xs pt-0.5 shrink-0 w-14">9:30 AM</span>
-              <div><div class="text-white text-sm font-medium">Yoga Flow</div><div class="text-gray-500 text-xs">60 min · Studio B</div></div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="font-mono text-gold text-xs pt-0.5 shrink-0 w-14">12:00 PM</span>
-              <div><div class="text-white text-sm font-medium">HIIT Express</div><div class="text-gray-500 text-xs">30 min · Main Floor</div></div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="font-mono text-gold text-xs pt-0.5 shrink-0 w-14">5:30 PM</span>
-              <div><div class="text-white text-sm font-medium">Strength Circuit</div><div class="text-gray-500 text-xs">60 min · Weight Room</div></div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="font-mono text-gold text-xs pt-0.5 shrink-0 w-14">7:00 PM</span>
-              <div><div class="text-white text-sm font-medium">Spin Class</div><div class="text-gray-500 text-xs">45 min · Cycle Studio</div></div>
-            </li>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Top off your workout with a tan. We've got tanning beds on-site — no appointment needed, just walk in and go. Add unlimited tanning to any membership or pay as you go.</p>
+          <ul class="text-gray-400 text-sm space-y-1.5 mb-5">
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Clean, well-maintained beds</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> No appointment required</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Add to any membership</li>
           </ul>
-          <a href="classes.html" class="inline-flex items-center gap-1 text-gold hover:text-goldlt font-semibold text-sm transition-colors">
-            Full Schedule
+          <a href="tanning.html" class="inline-flex items-center gap-1 text-gold hover:text-goldlt font-semibold text-sm transition-colors">
+            Tanning Details
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
         </div>
@@ -562,7 +537,7 @@
                   Meet Amanda — Certified Personal Trainer
                 </h4>
                 <p class="text-gray-600 text-sm leading-relaxed">Amanda Romanovicz is now taking clients at Kings Gym. Certified PT &amp; Nutrition Coach specializing in fat loss, muscle growth, and bodybuilding prep.</p>
-                <a href="classes.html#personal" class="inline-flex items-center gap-1 text-gold text-xs font-semibold mt-2 hover:text-golddk transition-colors">Book a Consult →</a>
+                <a href="contact.html" class="inline-flex items-center gap-1 text-gold text-xs font-semibold mt-2 hover:text-golddk transition-colors">Book a Consult →</a>
               </div>
             </article>
 
@@ -595,7 +570,7 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <p class="section-label mb-4">New Members</p>
       <h2 class="font-display font-bold text-5xl text-white mb-4">YOUR FIRST WEEK IS FREE</h2>
-      <p class="text-gray-400 text-lg mb-8">New members get a free 7-day trial — full access to the gym, classes, and equipment. No commitment, no card required.</p>
+      <p class="text-gray-400 text-lg mb-8">New members get a free 7-day trial — full access to the gym, equipment, and facilities. No commitment, no card required.</p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="contact.html" class="bg-gold hover:bg-goldlt text-navy font-display font-bold px-10 py-4 text-base uppercase tracking-widest transition-all duration-200 rounded-sm shadow-lg shadow-gold/20">
           Start Your Free Week
@@ -637,7 +612,7 @@
           <ul class="space-y-2.5 text-sm">
             <li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li>
             <li><a href="rates.html" class="hover:text-gold transition-colors">Membership Rates</a></li>
-            <li><a href="classes.html" class="hover:text-gold transition-colors">Class Schedule</a></li>
+            <li><a href="tanning.html" class="hover:text-gold transition-colors">Tanning</a></li>
             <li><a href="facilities.html" class="hover:text-gold transition-colors">Facilities</a></li>
             <li><a href="contact.html" class="hover:text-gold transition-colors">Contact Us</a></li>
             <li><a href="rates.html" class="hover:text-gold transition-colors">Join Now</a></li>
