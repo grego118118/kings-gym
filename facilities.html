@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities &amp; Equipment — Kings Gym | Springfield, MA</title>
+  <meta name="description" content="Kings Gym features a state-of-the-art weight room, cardio floor, group fitness studios, cycle studio, sauna, steam room, and more." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy:'#0d1f3c', navymd:'#162d54', navylt:'#1e3d6e', gold:'#c8a84b', goldlt:'#e8c96a', golddk:'#8a6f2a', cream:'#f8f6f0', charcoal:'#1a1a1a' },
+          fontFamily: { display:['Oswald','sans-serif'], body:['Inter','system-ui','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    html{scroll-behavior:smooth;} body{font-family:'Inter',system-ui,sans-serif;} h1,h2,h3,h4{font-family:'Oswald',sans-serif;}
+    .nav-link{display:block;padding:.5rem .75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;transition:color .2s;} .nav-link:hover{color:#c8a84b;}
+    .dropdown-link{display:block;padding:.5rem 1.25rem;font-size:.875rem;color:#374151;transition:background .15s,color .15s;} .dropdown-link:hover{background:#f8f6f0;color:#c8a84b;}
+    .nav-dropdown{display:none;} .nav-item:hover .nav-dropdown{display:block;}
+    #mobile-menu{display:none;} #mobile-menu.open{display:block;}
+    .section-label{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#c8a84b;}
+    .page-hero{background-image:linear-gradient(to bottom,rgba(13,31,60,.9),rgba(13,31,60,.65)),url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&fit=crop');background-size:cover;background-position:center;}
+    .fac-img{transition:transform .45s ease;} .fac-card:hover .fac-img{transform:scale(1.06);}
+  </style>
+</head>
+<body class="bg-white text-charcoal">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-8 text-gray-400 text-sm"><span>📍 123 Kings Drive, Springfield, MA 01101</span><span>✉️ info@kingsgym.com</span></div>
+      <a href="tel:4135550100" class="text-gold font-semibold text-sm">(413) 555-0100</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+          <svg width="44" height="34" viewBox="0 0 60 46" fill="none"><path d="M6 38 L6 22 L18 10 L30 26 L42 10 L54 22 L54 38 Z" fill="#c8a84b"/><rect x="6" y="34" width="48" height="6" rx="1" fill="#c8a84b"/><circle cx="6" cy="21" r="4" fill="#c8a84b"/><circle cx="30" cy="9" r="4" fill="#c8a84b"/><circle cx="54" cy="21" r="4" fill="#c8a84b"/></svg>
+          <div class="leading-tight"><div class="font-display font-bold text-2xl text-navy tracking-widest leading-none">KINGS GYM</div><div style="font-family:'Inter',sans-serif;font-size:.65rem;letter-spacing:.22em;color:#c8a84b;font-weight:600;text-transform:uppercase;">Train Like Royalty</div></div>
+        </a>
+        <ul class="hidden md:flex items-center">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="rates.html" class="nav-link">Rates</a></li>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1">Classes <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="classes.html" class="dropdown-link">Class Schedule</a><a href="classes.html#instructors" class="dropdown-link">Instructors</a><a href="classes.html#group" class="dropdown-link">Group Fitness</a><a href="classes.html#personal" class="dropdown-link">Personal Training</a></div>
+          </li>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1" style="color:#c8a84b;">The Gym <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="facilities.html" class="dropdown-link" style="color:#c8a84b;">Facilities &amp; Equipment</a><a href="facilities.html#services" class="dropdown-link">Services</a><a href="index.html#news" class="dropdown-link">Gym News</a><a href="contact.html" class="dropdown-link">Our Staff</a></div>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a href="rates.html" class="hidden md:inline-flex bg-gold hover:bg-golddk text-navy font-display font-bold px-6 py-3 text-sm tracking-wider uppercase transition-colors rounded-sm">Join Now</a>
+          <button id="mobile-toggle" class="md:hidden p-2 rounded-md hover:bg-gray-100"><svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu"><div class="bg-navy px-6 py-4"><nav class="flex flex-col divide-y divide-navylt"><a href="index.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Home</a><a href="rates.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Rates</a><a href="classes.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Classes</a><a href="facilities.html" class="py-3 text-gold font-display tracking-wider text-sm uppercase">Facilities</a><a href="contact.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Contact</a></nav><a href="rates.html" class="mt-4 w-full block bg-gold text-navy font-display font-bold py-3 text-center text-sm tracking-wider uppercase rounded-sm">Join Now</a></div></div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero py-20 text-center">
+    <p class="section-label mb-3">50,000 Sq Ft of Excellence</p>
+    <h1 class="font-display font-bold text-6xl md:text-7xl text-white mb-4">OUR FACILITIES</h1>
+    <p class="text-gray-300 text-lg max-w-xl mx-auto">Everything you need to train at your best — under one roof.</p>
+  </section>
+
+  <!-- FACILITIES GRID -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Weight Room -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="fac-card overflow-hidden rounded-sm shadow-lg">
+          <img class="fac-img w-full h-80 object-cover" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=80&fit=crop" alt="Weight Room" loading="lazy" />
+        </div>
+        <div>
+          <p class="section-label mb-3">Free Weights &amp; Machines</p>
+          <h2 class="font-display font-bold text-4xl text-navy mb-4">WEIGHT ROOM</h2>
+          <div class="w-12 h-0.5 bg-gold mb-5"></div>
+          <p class="text-gray-600 leading-relaxed mb-5">Our weight room spans over 15,000 sq ft and is stocked with the finest equipment from Life Fitness, Hammer Strength, and Rogue. Whether you're training for strength, hypertrophy, or functional fitness — we have everything you need.</p>
+          <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Dumbbells up to 150 lbs</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 8 squat racks</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 3 Olympic platforms</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cable systems &amp; pulleys</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Bumper plates &amp; barbells</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 50+ selectorized machines</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cardio Floor -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="md:order-2 fac-card overflow-hidden rounded-sm shadow-lg">
+          <img class="fac-img w-full h-80 object-cover" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80&fit=crop" alt="Cardio Floor" loading="lazy" />
+        </div>
+        <div class="md:order-1">
+          <p class="section-label mb-3">Endurance Training</p>
+          <h2 class="font-display font-bold text-4xl text-navy mb-4">CARDIO FLOOR</h2>
+          <div class="w-12 h-0.5 bg-gold mb-5"></div>
+          <p class="text-gray-600 leading-relaxed mb-5">Our expansive cardio floor features 60+ machines from top brands, all with personal entertainment screens, Bluetooth audio, and built-in workout programs to keep your training fresh.</p>
+          <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 20 Life Fitness treadmills</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 15 elliptical machines</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Concept2 rowing machines</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> StairMaster step mills</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Assault &amp; Echo bikes</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 22" HD touchscreens</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Studios -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="fac-card overflow-hidden rounded-sm shadow-lg">
+          <img class="fac-img w-full h-80 object-cover" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&q=80&fit=crop" alt="Group Fitness Studios" loading="lazy" />
+        </div>
+        <div>
+          <p class="section-label mb-3">Where Classes Come Alive</p>
+          <h2 class="font-display font-bold text-4xl text-navy mb-4">FITNESS STUDIOS</h2>
+          <div class="w-12 h-0.5 bg-gold mb-5"></div>
+          <p class="text-gray-600 leading-relaxed mb-5">Two dedicated studios purpose-built for different training styles. Studio A features a sprung hardwood floor ideal for high-impact classes. Studio B is a serene, lower-impact space for yoga, pilates, and barre.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Sprung hardwood floor (impact-absorbing)</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Full mirror walls</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> JBL premium sound system</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Yoga mats, blocks &amp; straps provided</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sauna -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="md:order-2 fac-card overflow-hidden rounded-sm shadow-lg">
+          <img class="fac-img w-full h-80 object-cover" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&fit=crop" alt="Sauna and Recovery" loading="lazy" />
+        </div>
+        <div class="md:order-1">
+          <p class="section-label mb-3">Rest &amp; Recovery</p>
+          <h2 class="font-display font-bold text-4xl text-navy mb-4">SAUNA &amp; RECOVERY</h2>
+          <div class="w-12 h-0.5 bg-gold mb-5"></div>
+          <p class="text-gray-600 leading-relaxed mb-5">Recovery is half the battle. Our wellness suite features a Finnish dry sauna, a eucalyptus steam room, and a cold plunge pool — the complete recovery trifecta used by elite athletes worldwide.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Finnish dry sauna (170–185°F)</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Eucalyptus steam room</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cold plunge pool (55°F)</li>
+            <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Stretching &amp; foam rolling area</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="section-label mb-3">Included &amp; Add-On</p>
+        <h2 class="font-display font-bold text-4xl text-navy">SERVICES &amp; AMENITIES</h2>
+        <div class="w-14 h-0.5 bg-gold mx-auto mt-4"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-sm p-6 border border-gray-100 hover:border-gold transition-colors hover:shadow-md">
+          <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-2">Fitness Assessments</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Free initial body composition and fitness assessment for all new members. Track your progress quarterly.</p>
+          <p class="text-gold text-xs font-semibold mt-3 uppercase tracking-wider">Included w/ Annual</p>
+        </div>
+        <div class="bg-white rounded-sm p-6 border border-gray-100 hover:border-gold transition-colors hover:shadow-md">
+          <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg></div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-2">Pro Shop</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Kings Gym apparel, accessories, supplements, and equipment available at the front desk and in our lobby shop.</p>
+          <p class="text-gold text-xs font-semibold mt-3 uppercase tracking-wider">10% Off for Members</p>
+        </div>
+        <div class="bg-white rounded-sm p-6 border border-gray-100 hover:border-gold transition-colors hover:shadow-md">
+          <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2v-1a7 7 0 00-7-7 7 7 0 00-7 7v1a2 2 0 002 2zm4-10a4 4 0 100-8 4 4 0 000 8z"/></svg></div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-2">Personal Training</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">One-on-one coaching with NSCA/NASM certified trainers. Custom programs, nutrition guidance, and accountability.</p>
+          <p class="text-gold text-xs font-semibold mt-3 uppercase tracking-wider">From $50/Session</p>
+        </div>
+        <div class="bg-white rounded-sm p-6 border border-gray-100 hover:border-gold transition-colors hover:shadow-md">
+          <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-2">Towel Service</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Fresh, clean towels available at the towel desk. Complimentary for Annual members; $2/visit for Monthly members.</p>
+          <p class="text-gold text-xs font-semibold mt-3 uppercase tracking-wider">Free w/ Annual</p>
+        </div>
+        <div class="bg-white rounded-sm p-6 border border-gray-100 hover:border-gold transition-colors hover:shadow-md">
+          <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-2">Nutrition Coaching</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">On-staff nutrition advisor available for members. Meal planning, macro guidance, and supplement advice included in PT packages.</p>
+          <p class="text-gold text-xs font-semibold mt-3 uppercase tracking-wider">Add-On Available</p>
+        </div>
+        <div class="bg-white rounded-sm p-6 border border-gray-100 hover:border-gold transition-colors hover:shadow-md">
+          <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-2">Guest Passes</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Bring a friend or family member. Monthly members get 1 pass/month; Annual members receive 4 passes/month. Extra passes available for purchase.</p>
+          <p class="text-gold text-xs font-semibold mt-3 uppercase tracking-wider">Included w/ Membership</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-navy py-14">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display font-bold text-4xl text-white mb-3">SEE IT FOR YOURSELF</h2>
+      <p class="text-gray-400 mb-8">Book a free tour and get a complimentary day pass. No pressure, just a chance to see why Kings Gym is Springfield's best.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="bg-gold hover:bg-goldlt text-navy font-display font-bold px-9 py-4 text-sm uppercase tracking-widest transition-colors rounded-sm">Book a Free Tour</a>
+        <a href="rates.html" class="border-2 border-white/40 text-white hover:border-gold hover:text-gold font-display font-bold px-9 py-4 text-sm uppercase tracking-widest transition-colors rounded-sm">View Membership Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-gray-500 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <p>&copy; 2026 Kings Gym. All rights reserved.</p>
+      <div class="flex gap-6"><a href="index.html" class="hover:text-gray-300">Home</a><a href="rates.html" class="hover:text-gray-300">Rates</a><a href="classes.html" class="hover:text-gray-300">Classes</a><a href="contact.html" class="hover:text-gray-300">Contact</a></div>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="hover:text-gray-300 flex items-center gap-1">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-toggle');
+    const menu   = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+  </script>
+</body>
+</html>

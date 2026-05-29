@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes &amp; Schedule — Kings Gym | Springfield, MA</title>
+  <meta name="description" content="Kings Gym group fitness classes: yoga, HIIT, boot camp, spin, strength circuit, and more. View the full weekly schedule and meet our instructors." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy:'#0d1f3c', navymd:'#162d54', navylt:'#1e3d6e', gold:'#c8a84b', goldlt:'#e8c96a', golddk:'#8a6f2a', cream:'#f8f6f0', charcoal:'#1a1a1a' },
+          fontFamily: { display:['Oswald','sans-serif'], body:['Inter','system-ui','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    html{scroll-behavior:smooth;} body{font-family:'Inter',system-ui,sans-serif;} h1,h2,h3,h4{font-family:'Oswald',sans-serif;}
+    .nav-link{display:block;padding:.5rem .75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;transition:color .2s;} .nav-link:hover{color:#c8a84b;}
+    .dropdown-link{display:block;padding:.5rem 1.25rem;font-size:.875rem;color:#374151;transition:background .15s,color .15s;} .dropdown-link:hover{background:#f8f6f0;color:#c8a84b;}
+    .nav-dropdown{display:none;} .nav-item:hover .nav-dropdown{display:block;}
+    #mobile-menu{display:none;} #mobile-menu.open{display:block;}
+    .section-label{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#c8a84b;}
+    .page-hero{background-image:linear-gradient(to bottom,rgba(13,31,60,.85),rgba(13,31,60,.6)),url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1600&q=80&fit=crop');background-size:cover;background-position:center;}
+    .class-card:hover{transform:translateY(-4px);}
+    .day-btn.active{background:#c8a84b;color:#0d1f3c;font-weight:700;}
+  </style>
+</head>
+<body class="bg-white text-charcoal">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-8 text-gray-400 text-sm"><span>📍 123 Kings Drive, Springfield, MA 01101</span><span>✉️ info@kingsgym.com</span></div>
+      <a href="tel:4135550100" class="text-gold font-semibold text-sm">(413) 555-0100</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+          <svg width="44" height="34" viewBox="0 0 60 46" fill="none"><path d="M6 38 L6 22 L18 10 L30 26 L42 10 L54 22 L54 38 Z" fill="#c8a84b"/><rect x="6" y="34" width="48" height="6" rx="1" fill="#c8a84b"/><circle cx="6" cy="21" r="4" fill="#c8a84b"/><circle cx="30" cy="9" r="4" fill="#c8a84b"/><circle cx="54" cy="21" r="4" fill="#c8a84b"/></svg>
+          <div class="leading-tight"><div class="font-display font-bold text-2xl text-navy tracking-widest leading-none">KINGS GYM</div><div style="font-family:'Inter',sans-serif;font-size:.65rem;letter-spacing:.22em;color:#c8a84b;font-weight:600;text-transform:uppercase;">Train Like Royalty</div></div>
+        </a>
+        <ul class="hidden md:flex items-center">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="rates.html" class="nav-link">Rates</a></li>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1" style="color:#c8a84b;">Classes <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="classes.html" class="dropdown-link">Class Schedule</a><a href="classes.html#instructors" class="dropdown-link">Instructors</a><a href="classes.html#group" class="dropdown-link">Group Fitness</a><a href="classes.html#personal" class="dropdown-link">Personal Training</a></div>
+          </li>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1">The Gym <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="facilities.html" class="dropdown-link">Facilities &amp; Equipment</a><a href="facilities.html#services" class="dropdown-link">Services</a><a href="index.html#news" class="dropdown-link">Gym News</a><a href="contact.html" class="dropdown-link">Our Staff</a></div>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a href="rates.html" class="hidden md:inline-flex bg-gold hover:bg-golddk text-navy font-display font-bold px-6 py-3 text-sm tracking-wider uppercase transition-colors rounded-sm">Join Now</a>
+          <button id="mobile-toggle" class="md:hidden p-2 rounded-md hover:bg-gray-100"><svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu"><div class="bg-navy px-6 py-4"><nav class="flex flex-col divide-y divide-navylt"><a href="index.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Home</a><a href="rates.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Rates</a><a href="classes.html" class="py-3 text-gold font-display tracking-wider text-sm uppercase">Classes</a><a href="facilities.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Facilities</a><a href="contact.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Contact</a></nav><a href="rates.html" class="mt-4 w-full block bg-gold text-navy font-display font-bold py-3 text-center text-sm tracking-wider uppercase rounded-sm">Join Now</a></div></div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero py-20 text-center">
+    <p class="section-label mb-3">Over 30 Classes Per Week</p>
+    <h1 class="font-display font-bold text-6xl md:text-7xl text-white mb-4">GROUP FITNESS</h1>
+    <p class="text-gray-300 text-lg max-w-xl mx-auto">Expert-led classes for every fitness level. All included in your membership.</p>
+  </section>
+
+  <!-- WEEKLY SCHEDULE -->
+  <section id="schedule" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <p class="section-label mb-3">This Week</p>
+        <h2 class="font-display font-bold text-4xl text-navy">CLASS SCHEDULE</h2>
+        <div class="w-14 h-0.5 bg-gold mx-auto mt-4"></div>
+      </div>
+
+      <!-- Day Selector -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10" id="day-buttons">
+        <button onclick="showDay('mon')" class="day-btn active px-5 py-2 font-display text-sm uppercase tracking-wider border border-gold rounded-sm transition-all" data-day="mon">Mon</button>
+        <button onclick="showDay('tue')" class="day-btn px-5 py-2 font-display text-sm uppercase tracking-wider border border-gray-200 rounded-sm hover:border-gold transition-all" data-day="tue">Tue</button>
+        <button onclick="showDay('wed')" class="day-btn px-5 py-2 font-display text-sm uppercase tracking-wider border border-gray-200 rounded-sm hover:border-gold transition-all" data-day="wed">Wed</button>
+        <button onclick="showDay('thu')" class="day-btn px-5 py-2 font-display text-sm uppercase tracking-wider border border-gray-200 rounded-sm hover:border-gold transition-all" data-day="thu">Thu</button>
+        <button onclick="showDay('fri')" class="day-btn px-5 py-2 font-display text-sm uppercase tracking-wider border border-gray-200 rounded-sm hover:border-gold transition-all" data-day="fri">Fri</button>
+        <button onclick="showDay('sat')" class="day-btn px-5 py-2 font-display text-sm uppercase tracking-wider border border-gray-200 rounded-sm hover:border-gold transition-all" data-day="sat">Sat</button>
+        <button onclick="showDay('sun')" class="day-btn px-5 py-2 font-display text-sm uppercase tracking-wider border border-gray-200 rounded-sm hover:border-gold transition-all" data-day="sun">Sun</button>
+      </div>
+
+      <!-- Schedule Tables -->
+      <div id="schedule-mon" class="schedule-day">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Monday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">6:00 AM</span><span class="font-medium text-navy">Boot Camp <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Main Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">9:30 AM</span><span class="font-medium text-navy">Yoga Flow <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Sarah K.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">12:00 PM</span><span class="font-medium text-navy">HIIT Express <span class="text-xs font-normal text-gray-400 ml-1">30 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Floor</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">5:30 PM</span><span class="font-medium text-navy">Strength Circuit <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Weight Room</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">7:00 PM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule-tue" class="schedule-day hidden">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Tuesday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">6:00 AM</span><span class="font-medium text-navy">Power Yoga <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Sarah K.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">7:00 AM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">12:00 PM</span><span class="font-medium text-navy">Pilates Core <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Maria L.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">4:30 PM</span><span class="font-medium text-navy">Kickboxing <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">6:00 PM</span><span class="font-medium text-navy">Strength Circuit <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Weight Room</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule-wed" class="schedule-day hidden">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Wednesday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">6:00 AM</span><span class="font-medium text-navy">Boot Camp <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Main Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">9:30 AM</span><span class="font-medium text-navy">Yoga Flow <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Sarah K.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">12:00 PM</span><span class="font-medium text-navy">HIIT Express <span class="text-xs font-normal text-gray-400 ml-1">30 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Floor</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">5:30 PM</span><span class="font-medium text-navy">Barre Fusion <span class="text-xs font-normal text-gray-400 ml-1">55 min</span></span><span class="text-gray-600">Maria L.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">7:00 PM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule-thu" class="schedule-day hidden">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Thursday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">6:00 AM</span><span class="font-medium text-navy">Power Yoga <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Sarah K.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">7:00 AM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">12:00 PM</span><span class="font-medium text-navy">Strength Circuit <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Weight Room</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">5:30 PM</span><span class="font-medium text-navy">Kickboxing <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">7:00 PM</span><span class="font-medium text-navy">HIIT Express <span class="text-xs font-normal text-gray-400 ml-1">30 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Floor</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule-fri" class="schedule-day hidden">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Friday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">6:00 AM</span><span class="font-medium text-navy">Boot Camp <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Main Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">9:30 AM</span><span class="font-medium text-navy">Pilates Core <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Maria L.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">12:00 PM</span><span class="font-medium text-navy">Yoga Flow <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Sarah K.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">5:30 PM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">7:00 PM</span><span class="font-medium text-navy">HIIT Express <span class="text-xs font-normal text-gray-400 ml-1">30 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Floor</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule-sat" class="schedule-day hidden">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Saturday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">8:00 AM</span><span class="font-medium text-navy">Weekend Warriors <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Main Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">9:30 AM</span><span class="font-medium text-navy">Yoga Flow <span class="text-xs font-normal text-gray-400 ml-1">75 min</span></span><span class="text-gray-600">Sarah K.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">11:00 AM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">1:00 PM</span><span class="font-medium text-navy">Kickboxing <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Dre</span><span class="text-gray-500">Main Studio</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule-sun" class="schedule-day hidden">
+        <div class="bg-white rounded-sm overflow-hidden shadow-sm">
+          <div class="bg-navy px-6 py-3"><h3 class="font-display text-gold uppercase tracking-widest text-sm">Sunday</h3></div>
+          <div class="divide-y divide-gray-50">
+            <div class="grid grid-cols-4 px-6 py-4 text-xs font-semibold text-gray-400 uppercase tracking-wider bg-gray-50"><span>Time</span><span>Class</span><span>Instructor</span><span>Location</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">9:00 AM</span><span class="font-medium text-navy">Restorative Yoga <span class="text-xs font-normal text-gray-400 ml-1">75 min</span></span><span class="text-gray-600">Maria L.</span><span class="text-gray-500">Studio B</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">10:30 AM</span><span class="font-medium text-navy">Strength Circuit <span class="text-xs font-normal text-gray-400 ml-1">60 min</span></span><span class="text-gray-600">Coach Marcus</span><span class="text-gray-500">Weight Room</span></div>
+            <div class="grid grid-cols-4 px-6 py-4 hover:bg-cream transition-colors text-sm"><span class="text-gold font-mono font-medium">12:00 PM</span><span class="font-medium text-navy">Spin Class <span class="text-xs font-normal text-gray-400 ml-1">45 min</span></span><span class="text-gray-600">Jess M.</span><span class="text-gray-500">Cycle Studio</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLASS TYPES -->
+  <section id="group" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="section-label mb-3">All Included</p>
+        <h2 class="font-display font-bold text-4xl text-navy">OUR CLASS OFFERINGS</h2>
+        <div class="w-14 h-0.5 bg-gold mx-auto mt-4"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Boot Camp</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">High-intensity interval training with a military-inspired structure. Full-body conditioning using bodyweight and equipment.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>45–60 min</span><span>·</span><span>All levels</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Yoga Flow</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Dynamic vinyasa yoga linking breath with movement. Builds flexibility, balance, and mental clarity. Modifications offered for all levels.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>60–75 min</span><span>·</span><span>Beginner friendly</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">HIIT Express</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Maximum effort in minimum time. 30-minute high-intensity intervals designed to torch calories and boost metabolism all day.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>30 min</span><span>·</span><span>Intermediate</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Spin / Indoor Cycling</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Instructor-led cycling to high-energy music. Adjustable resistance for all fitness levels. Pure cardio endurance training.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>45 min</span><span>·</span><span>All levels</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Strength Circuit</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Structured resistance training in a circuit format. Focus on compound lifts, muscular endurance, and progressive overload.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>60 min</span><span>·</span><span>All levels</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Kickboxing</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Cardio kickboxing combining martial arts techniques with full-body fitness. High energy, empowering, and a serious calorie burn.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>60 min</span><span>·</span><span>All levels</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Pilates Core</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Low-impact, precision-focused core work. Strengthens the deep stabilizers of the spine. Great for injury prevention and posture.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>45 min</span><span>·</span><span>Beginner friendly</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Barre Fusion</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Ballet-inspired conditioning targeting the legs, glutes, and core. Small isometric movements that create big definition and strength.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>55 min</span><span>·</span><span>Beginner friendly</span></div>
+        </div>
+        <div class="class-card bg-cream rounded-sm p-7 border-l-4 border-gold transition-transform duration-300 cursor-default">
+          <h3 class="font-display text-xl text-navy uppercase tracking-wide mb-2">Restorative Yoga</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Gentle, prop-supported poses held for deep relaxation and recovery. Perfect for rest days and anyone needing stress relief.</p>
+          <div class="flex gap-3 text-xs text-gray-400"><span>75 min</span><span>·</span><span>All levels</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORS -->
+  <section id="instructors" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="section-label mb-3">Meet the Team</p>
+        <h2 class="font-display font-bold text-4xl text-navy">OUR INSTRUCTORS</h2>
+        <div class="w-14 h-0.5 bg-gold mx-auto mt-4"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-gold/30">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=300&h=300&q=80&fit=crop&crop=face" alt="Coach Marcus" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-1">Coach Marcus</h3>
+          <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">Boot Camp · Strength</p>
+          <p class="text-gray-600 text-sm">NSCA-CSCS certified. Former D1 athlete with 10+ years coaching experience. Specializes in athletic performance and functional strength.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-gold/30">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=300&h=300&q=80&fit=crop&crop=face" alt="Sarah K." class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-1">Sarah K.</h3>
+          <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">Yoga · Pilates</p>
+          <p class="text-gray-600 text-sm">200-hr RYT certified. Trained in Vinyasa and Yin traditions. Her classes are known for creative sequencing and a welcoming atmosphere.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-gold/30">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=300&h=300&q=80&fit=crop&crop=center" alt="Coach Dre" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-1">Coach Dre</h3>
+          <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">HIIT · Kickboxing</p>
+          <p class="text-gray-600 text-sm">NASM-CPT certified and former boxing coach. His high-energy classes push you past your limits in a supportive, motivating environment.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-gold/30">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=300&h=300&q=80&fit=crop&crop=center" alt="Jess M." class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-display text-lg text-navy uppercase tracking-wide mb-1">Jess M.</h3>
+          <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">Spin · Barre</p>
+          <p class="text-gray-600 text-sm">Certified indoor cycling and barre instructor. Brings unstoppable energy and carefully curated playlists to every ride. Your legs will never be the same.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL TRAINING CTA -->
+  <section id="personal" class="py-16 bg-navy">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="section-label mb-3">One-on-One</p>
+        <h2 class="font-display font-bold text-4xl text-white mb-4">PERSONAL TRAINING</h2>
+        <p class="text-gray-400 leading-relaxed mb-6">Want a program built specifically for your body and your goals? Our certified personal trainers create customized plans, track your progress, and keep you accountable every step of the way.</p>
+        <ul class="space-y-2 text-gray-300 text-sm mb-8">
+          <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Customized workout program</li>
+          <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Body composition tracking</li>
+          <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Nutrition guidance</li>
+          <li class="flex items-center gap-2.5"><svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Sessions from $50/hr with annual membership</li>
+        </ul>
+        <div class="flex flex-wrap gap-4">
+          <a href="rates.html#personal" class="bg-gold hover:bg-goldlt text-navy font-display font-bold px-8 py-3 text-sm uppercase tracking-widest transition-colors rounded-sm">View PT Pricing</a>
+          <a href="contact.html" class="border-2 border-white/40 text-white hover:border-gold hover:text-gold font-display font-bold px-8 py-3 text-sm uppercase tracking-widest transition-colors rounded-sm">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-sm">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=80&fit=crop" alt="Personal Training" class="w-full h-72 object-cover" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-gray-500 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <p>&copy; 2026 Kings Gym. All rights reserved.</p>
+      <div class="flex gap-6"><a href="index.html" class="hover:text-gray-300">Home</a><a href="rates.html" class="hover:text-gray-300">Rates</a><a href="classes.html" class="hover:text-gray-300">Classes</a><a href="contact.html" class="hover:text-gray-300">Contact</a></div>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="hover:text-gray-300 flex items-center gap-1">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-toggle');
+    const menu   = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+
+    function showDay(day) {
+      document.querySelectorAll('.schedule-day').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.day-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.style.borderColor = '';
+      });
+      document.getElementById('schedule-' + day).classList.remove('hidden');
+      const btn = document.querySelector('[data-day="' + day + '"]');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

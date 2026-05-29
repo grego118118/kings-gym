@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Kings Gym | Springfield, MA</title>
+  <meta name="description" content="Contact Kings Gym in Springfield, MA. Visit us at 123 Kings Drive, call (413) 555-0100, or send us a message. We'd love to hear from you." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy:'#0d1f3c', navymd:'#162d54', navylt:'#1e3d6e', gold:'#c8a84b', goldlt:'#e8c96a', golddk:'#8a6f2a', cream:'#f8f6f0', charcoal:'#1a1a1a' },
+          fontFamily: { display:['Oswald','sans-serif'], body:['Inter','system-ui','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    html{scroll-behavior:smooth;} body{font-family:'Inter',system-ui,sans-serif;} h1,h2,h3,h4{font-family:'Oswald',sans-serif;}
+    .nav-link{display:block;padding:.5rem .75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;transition:color .2s;} .nav-link:hover{color:#c8a84b;}
+    .dropdown-link{display:block;padding:.5rem 1.25rem;font-size:.875rem;color:#374151;transition:background .15s,color .15s;} .dropdown-link:hover{background:#f8f6f0;color:#c8a84b;}
+    .nav-dropdown{display:none;} .nav-item:hover .nav-dropdown{display:block;}
+    #mobile-menu{display:none;} #mobile-menu.open{display:block;}
+    .section-label{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#c8a84b;}
+    input,textarea,select{font-family:'Inter',system-ui,sans-serif;}
+    input:focus,textarea:focus,select:focus{outline:none;border-color:#c8a84b;box-shadow:0 0 0 3px rgba(200,168,75,0.1);}
+  </style>
+</head>
+<body class="bg-white text-charcoal">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-8 text-gray-400 text-sm"><span>📍 123 Kings Drive, Springfield, MA 01101</span><span>✉️ info@kingsgym.com</span></div>
+      <a href="tel:4135550100" class="text-gold font-semibold text-sm">(413) 555-0100</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+          <svg width="44" height="34" viewBox="0 0 60 46" fill="none"><path d="M6 38 L6 22 L18 10 L30 26 L42 10 L54 22 L54 38 Z" fill="#c8a84b"/><rect x="6" y="34" width="48" height="6" rx="1" fill="#c8a84b"/><circle cx="6" cy="21" r="4" fill="#c8a84b"/><circle cx="30" cy="9" r="4" fill="#c8a84b"/><circle cx="54" cy="21" r="4" fill="#c8a84b"/></svg>
+          <div class="leading-tight"><div class="font-display font-bold text-2xl text-navy tracking-widest leading-none">KINGS GYM</div><div style="font-family:'Inter',sans-serif;font-size:.65rem;letter-spacing:.22em;color:#c8a84b;font-weight:600;text-transform:uppercase;">Train Like Royalty</div></div>
+        </a>
+        <ul class="hidden md:flex items-center">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="rates.html" class="nav-link">Rates</a></li>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1">Classes <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="classes.html" class="dropdown-link">Class Schedule</a><a href="classes.html#instructors" class="dropdown-link">Instructors</a><a href="classes.html#group" class="dropdown-link">Group Fitness</a><a href="classes.html#personal" class="dropdown-link">Personal Training</a></div>
+          </li>
+          <li class="nav-item relative"><button class="nav-link flex items-center gap-1">The Gym <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="nav-dropdown absolute top-full left-0 bg-white shadow-xl border border-gray-100 py-2 min-w-[210px] rounded-b-lg z-50"><a href="facilities.html" class="dropdown-link">Facilities &amp; Equipment</a><a href="facilities.html#services" class="dropdown-link">Services</a><a href="index.html#news" class="dropdown-link">Gym News</a><a href="contact.html" class="dropdown-link">Our Staff</a></div>
+          </li>
+          <li><a href="contact.html" class="nav-link" style="color:#c8a84b;">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a href="rates.html" class="hidden md:inline-flex bg-gold hover:bg-golddk text-navy font-display font-bold px-6 py-3 text-sm tracking-wider uppercase transition-colors rounded-sm">Join Now</a>
+          <button id="mobile-toggle" class="md:hidden p-2 rounded-md hover:bg-gray-100"><svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu"><div class="bg-navy px-6 py-4"><nav class="flex flex-col divide-y divide-navylt"><a href="index.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Home</a><a href="rates.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Rates</a><a href="classes.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Classes</a><a href="facilities.html" class="py-3 text-white font-display tracking-wider text-sm uppercase hover:text-gold">Facilities</a><a href="contact.html" class="py-3 text-gold font-display tracking-wider text-sm uppercase">Contact</a></nav><a href="rates.html" class="mt-4 w-full block bg-gold text-navy font-display font-bold py-3 text-center text-sm tracking-wider uppercase rounded-sm">Join Now</a></div></div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="bg-navy py-16 text-center">
+    <p class="section-label mb-3">We'd Love to Hear From You</p>
+    <h1 class="font-display font-bold text-6xl text-white">CONTACT US</h1>
+  </div>
+
+  <!-- CONTACT INFO + FORM -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14">
+
+        <!-- Left: Info -->
+        <div>
+          <p class="section-label mb-3">Find Us</p>
+          <h2 class="font-display font-bold text-3xl text-navy mb-6">GET IN TOUCH</h2>
+
+          <div class="space-y-6 mb-10">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 bg-navy rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <h3 class="font-display text-base text-navy uppercase tracking-wide mb-1">Address</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">123 Kings Drive<br/>Springfield, MA 01101<br/><a href="https://maps.google.com" target="_blank" class="text-gold hover:text-golddk text-xs font-semibold mt-1 inline-block transition-colors">Get Directions →</a></p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 bg-navy rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-display text-base text-navy uppercase tracking-wide mb-1">Phone</h3>
+                <p class="text-gray-600 text-sm"><a href="tel:4135550100" class="hover:text-gold transition-colors">(413) 555-0100</a></p>
+                <p class="text-gray-400 text-xs mt-0.5">Mon–Fri 8 AM–8 PM · Sat–Sun 9 AM–4 PM</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 bg-navy rounded-full flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-display text-base text-navy uppercase tracking-wide mb-1">Email</h3>
+                <p class="text-gray-600 text-sm"><a href="mailto:info@kingsgym.com" class="hover:text-gold transition-colors">info@kingsgym.com</a></p>
+                <p class="text-gray-400 text-xs mt-0.5">Typically replies within a few hours</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="bg-cream rounded-sm p-7 border border-gray-100">
+            <h3 class="font-display text-xl text-navy uppercase tracking-widest mb-5">Club Hours</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex justify-between items-center pb-3 border-b border-gray-200">
+                <span class="font-medium text-navy">Monday – Friday</span>
+                <span class="text-gray-600 bg-white px-3 py-1 rounded-full text-xs border border-gray-200">5:00 AM – 10:00 PM</span>
+              </li>
+              <li class="flex justify-between items-center pb-3 border-b border-gray-200">
+                <span class="font-medium text-navy">Saturday</span>
+                <span class="text-gray-600 bg-white px-3 py-1 rounded-full text-xs border border-gray-200">7:00 AM – 8:00 PM</span>
+              </li>
+              <li class="flex justify-between items-center pb-3 border-b border-gray-200">
+                <span class="font-medium text-navy">Sunday</span>
+                <span class="text-gray-600 bg-white px-3 py-1 rounded-full text-xs border border-gray-200">8:00 AM – 6:00 PM</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="font-medium text-navy">Holidays</span>
+                <span class="text-gold bg-gold/10 px-3 py-1 rounded-full text-xs font-semibold">May Vary — Call Ahead</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div>
+          <p class="section-label mb-3">Drop Us a Line</p>
+          <h2 class="font-display font-bold text-3xl text-navy mb-6">SEND A MESSAGE</h2>
+          <form id="contact-form" class="space-y-5" onsubmit="handleSubmit(event)">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2" for="fname">First Name *</label>
+                <input id="fname" name="fname" type="text" required placeholder="Jackson"
+                       class="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm transition-all" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2" for="lname">Last Name *</label>
+                <input id="lname" name="lname" type="text" required placeholder="Smith"
+                       class="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm transition-all" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2" for="email">Email *</label>
+              <input id="email" name="email" type="email" required placeholder="you@email.com"
+                     class="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm transition-all" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2" for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="(413) 555-0000"
+                     class="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm transition-all" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2" for="subject">I'm Interested In</label>
+              <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm text-gray-700 bg-white transition-all appearance-none cursor-pointer">
+                <option value="">Select a topic...</option>
+                <option>Joining the gym</option>
+                <option>Membership pricing</option>
+                <option>Class schedule</option>
+                <option>Personal training</option>
+                <option>Free tour</option>
+                <option>Corporate / group rates</option>
+                <option>General question</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2" for="message">Message *</label>
+              <textarea id="message" name="message" required rows="5" placeholder="Tell us a little about your fitness goals or ask us anything..."
+                        class="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm resize-none transition-all"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gold hover:bg-golddk text-navy font-display font-bold py-4 text-sm uppercase tracking-widest transition-colors rounded-sm">
+              Send Message
+            </button>
+            <p class="text-gray-400 text-xs text-center">We typically respond within a few hours during business hours.</p>
+          </form>
+          <div id="form-success" class="hidden text-center py-12">
+            <div class="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            </div>
+            <h3 class="font-display text-2xl text-navy mb-2">MESSAGE SENT!</h3>
+            <p class="text-gray-600 text-sm">Thanks for reaching out. We'll get back to you soon.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="bg-cream py-4">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="rounded-sm overflow-hidden shadow-sm h-80 bg-gray-200 relative">
+        <!-- Embedded Google Maps placeholder - replace with real embed -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46805.99855985246!2d-72.62018545820313!3d42.10148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6fc03609b4e15%3A0xa6f8eb0e24d6e7ac!2sSpringfield%2C%20MA!5e0!3m2!1sen!2sus!4v1234567890"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kings Gym Location Map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE TOUR CTA -->
+  <section class="bg-navy py-14">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="section-label mb-3">No Pressure</p>
+      <h2 class="font-display font-bold text-4xl text-white mb-3">BOOK A FREE TOUR</h2>
+      <p class="text-gray-400 mb-8">Come see the gym, meet the staff, and get a feel for what Kings Gym is all about — zero obligation, just a great conversation and a free day pass.</p>
+      <a href="tel:4135550100" class="inline-flex items-center gap-3 bg-gold hover:bg-goldlt text-navy font-display font-bold px-10 py-4 text-base uppercase tracking-widest transition-colors rounded-sm">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        Call (413) 555-0100
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-gray-500 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <p>&copy; 2026 Kings Gym. All rights reserved.</p>
+      <div class="flex gap-6"><a href="index.html" class="hover:text-gray-300">Home</a><a href="rates.html" class="hover:text-gray-300">Rates</a><a href="classes.html" class="hover:text-gray-300">Classes</a><a href="contact.html" class="hover:text-gray-300">Contact</a></div>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="hover:text-gray-300 flex items-center gap-1">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-toggle');
+    const menu   = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
